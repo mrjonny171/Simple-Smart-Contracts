@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "favoriteNumber",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "sfAddPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "sfRetrievePerson",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "favoriteNumber",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleStorage.sol": {
+			"keccak256": "0x06adacb08b6032f4ff95821c5617a4a1e300945950d50bd61a54533159cf0e73",
+			"urls": [
+				"bzz-raw://8d5749c61fa7e773612337476ced067d493cd53fc6b2155c080fa3fb554f410f",
+				"dweb:/ipfs/QmWj1hpRM19865SePGAwJiJga841dC52w93qCVmdLLN6mG"
+			]
+		},
+		"contracts/StorageFactory.sol": {
+			"keccak256": "0xa7d19a1e2e14bf2f56eeb0b12748d8c212b0038cf494569658e69ea1a49f5975",
+			"urls": [
+				"bzz-raw://f9727266949074d1b50980c8f5c486e6c7611b11f5db0c66cc490773b9a7f11d",
+				"dweb:/ipfs/Qme2vZFjm5J6839vzzje75NMESxjeRCXcRjxvuzNACApAJ"
+			]
+		}
+	},
+	"version": 1
+}
